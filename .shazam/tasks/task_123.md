@@ -1,12 +1,12 @@
 ---
 id: task_123
 title: "Verify v0.1.0 Release Deployment Readiness"
-status: deleted
+status: in_progress
 assigned_to: pm_dashboard
 created_by: manager
 company: Shazam
 created_at: 2026-03-23T12:19:03.162462Z
-updated_at: 2026-03-23T12:19:15.653881Z
+updated_at: 2026-03-23T13:24:16.988475Z
 ---
 
 ## Description

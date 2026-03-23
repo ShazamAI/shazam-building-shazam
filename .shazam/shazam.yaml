@@ -5,6 +5,12 @@ company:
   mission: "Coordinate multiple AI agents in hierarchical teams. Define roles, delegate tasks, and let your AI company ship software autonomously."
 
 workspaces:
+  core:
+    path: /Users/raphaelbarbosa/Projects/ShazamAI/shazam-core
+    domains: ["lib/", "test/", "config/"]
+  cli:
+    path: /Users/raphaelbarbosa/Projects/ShazamAI/shazam-cli
+    domains: ["lib/", "test/", "shazam-tui/"]
   dashboard:
     path: /Users/raphaelbarbosa/Projects/ShazamAI/shazam-dashboard
     domains: ["src/", "components/", "pages/", "composables/", "assets/"]
@@ -13,6 +19,16 @@ workspaces:
     domains: ["src/", "extension/", "webview/"]
 
 domains:
+  core:
+    description: "Shazam Core — Elixir backend engine (OTP, TaskBoard, RalphLoop, API)"
+    paths:
+      - "lib/"
+      - "config/"
+  cli:
+    description: "Shazam CLI — TUI interface, commands, YAML parser (Elixir + Rust)"
+    paths:
+      - "lib/"
+      - "shazam-tui/"
   dashboard:
     description: "Vue 3 web dashboard for Shazam (TypeScript + Tailwind)"
     paths:
@@ -35,6 +51,58 @@ agents:
       - Grep
       - Glob
       - WebSearch
+
+  # ── Core Team (Elixir backend) ──────────────────
+  pm_core:
+    role: Project Manager — Core Engine
+    supervisor: manager
+    domain: core
+    workspace: core
+    model: claude-haiku-4-5-20251001
+    tools:
+      - Read
+      - Grep
+      - Glob
+      - WebSearch
+
+  core_dev_1:
+    role: Senior Elixir Developer
+    supervisor: pm_core
+    domain: core
+    workspace: core
+    tools:
+      - Read
+      - Edit
+      - Write
+      - Bash
+      - Grep
+      - Glob
+
+  core_dev_2:
+    role: Senior Elixir Developer
+    supervisor: pm_core
+    domain: core
+    workspace: core
+    tools:
+      - Read
+      - Edit
+      - Write
+      - Bash
+      - Grep
+      - Glob
+
+  core_dev_3:
+    role: Senior Elixir Developer
+    supervisor: pm_core
+    domain: core
+    workspace: core
+    tools:
+      - Read
+      - Edit
+      - Write
+      - Bash
+      - Grep
+      - Glob
 
   # ── Dashboard Team (Vue 3 + Tailwind) ───────────
   pm_dashboard:
@@ -143,13 +211,20 @@ agents:
 config:
   auto_approve: true
   auto_retry: true
-  max_concurrent: 8
+  max_concurrent: 12
   max_retries: 2
   poll_interval: 5000
   module_lock: true
   peer_reassign: true
 
 tech_stack:
+  core:
+    language: Elixir
+    framework: OTP (GenServer, ETS, DynamicSupervisor)
+    api: Bandit + Plug
+  cli:
+    language: Elixir + Rust
+    tui: ratatui + crossterm
   dashboard:
     language: TypeScript
     framework: Vue 3
