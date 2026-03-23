@@ -1,0 +1,82 @@
+{
+  "dashboard_dev_1": {
+    "cost_usd": 126.67717,
+    "failures": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "successes": 29,
+    "total_tokens": 285015
+  },
+  "dashboard_dev_2": {
+    "cost_usd": 139.350624,
+    "failures": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "successes": 32,
+    "total_tokens": 307868
+  },
+  "dashboard_dev_3": {
+    "cost_usd": 121.922473,
+    "failures": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "successes": 31,
+    "total_tokens": 288032
+  },
+  "manager": {
+    "cost_usd": 1.827292,
+    "failures": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "successes": 29,
+    "total_tokens": 51519
+  },
+  "persist_agent": {
+    "cost_usd": 0.1,
+    "failures": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "successes": 0,
+    "total_tokens": 2000
+  },
+  "pm_dashboard": {
+    "cost_usd": 1.390261,
+    "failures": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "successes": 5,
+    "total_tokens": 13385
+  },
+  "pm_vscode": {
+    "cost_usd": 0.844696,
+    "failures": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "successes": 3,
+    "total_tokens": 7689
+  },
+  "vscode_dev_1": {
+    "cost_usd": 3.201633,
+    "failures": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "successes": 2,
+    "total_tokens": 34054
+  },
+  "vscode_dev_2": {
+    "cost_usd": 2.315747,
+    "failures": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "successes": 2,
+    "total_tokens": 26865
+  },
+  "vscode_dev_3": {
+    "cost_usd": 2.819188,
+    "failures": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "successes": 2,
+    "total_tokens": 31139
+  }
+}
